@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100% !important;
+  border: none;
+  height: 66px;
+  align-items: center;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 25px 7%;
+  text-decoration: none;
+  font-size: 30px;
+  color: #ddd;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  color: #ddd;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  color: black;
+}

@@ -1,0 +1,51 @@
+.grid {
+  display: grid;
+  padding: 0.5em;
+  counter-reset: grid-items;
+  position: relative;
+}
+
+.grid::before {
+  position: absolute;
+  padding-left: 3em;
+  content: attr(data-keyword);
+}
+
+.grid--auto-fill {
+  grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+}
+
+.grid__item {
+  margin: 8%;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.grid--auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.card-item {
+  background-color: #f4f4f8;
+  height: 70%;
+  color: black;
+  padding: inherit;
+  border-radius: 10px;
+}
+.upside {
+  margin-top: -40px;
+}
+.card-item-image {
+  left: auto;
+  top: -47px;
+  position: relative;
+}
+.card-item-text {
+  left: auto;
+  top: -47px;
+  position: relative;
+  font-family: Poppins;
+  text-align: center;
+}
+.card-item-cost {
+  color: orange;
+}
